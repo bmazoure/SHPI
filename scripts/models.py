@@ -2,11 +2,8 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 import numpy as np
-from copy import deepcopy
-import sklearn
 
 from vowpalwabbit import pyvw
-from vowpalwabbit.sklearn_vw import VWClassifier
 
 
 class Regressor(torch.nn.Module):

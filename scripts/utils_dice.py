@@ -14,14 +14,12 @@
 
 import numpy as np
 import tensorflow.compat.v2 as tf
-from tf_agents import specs
 from tf_agents.policies import tf_policy
 from tf_agents.trajectories import policy_step
 import tensorflow_probability as tfp
 import collections
-from .dataset_dice import Dataset, EnvStep, StepType
+from .dataset_dice import EnvStep
 from tf_agents.trajectories import time_step
-from tf_agents.environments import tf_environment
 from tf_agents import specs
 
 PolicyInfo = collections.namedtuple(

@@ -6,7 +6,7 @@ from tqdm import tqdm
 from .agents import CBAgent, DiceAgent
 from .utils import rollout
 from .data_collection import RandomizedBatchDataset
-from .dataset_dice import Dataset, EnvStep, StepType
+from .dataset_dice import EnvStep
 from tf_agents.trajectories import time_step
 
 

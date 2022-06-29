@@ -4,15 +4,10 @@ import os
 import pickle
 
 import gym
-import matplotlib.pyplot as plt
-import more_itertools
 import numpy as np
 import pandas as pd
-import sklearn
 import tensorflow.compat.v2 as tf
 import torch
-from sklearn.datasets import make_spd_matrix
-from sklearn.neural_network import MLPClassifier
 from torch.nn import functional as F
 from tqdm import tqdm
 
@@ -22,24 +17,20 @@ tf.compat.v1.enable_eager_execution()
 from tf_agents.environments import gym_wrapper, tf_py_environment
 from tf_agents.environments.suite_gym import load as load_gym
 
-import scripts.estimator_dice as estimator_lib
 import scripts.utils_dice as common_utils
 from scripts.agents import (CBAgent, DiscreteBCQAgent, QLAgent, RandomAgent,
                             RandomCosAgent, SARSAAgent)
 from scripts.data_collection import BatchDataset
-from scripts.dataset_dice import Dataset, EnvStep, StepType
 from scripts.envs import (HIVTreatment, RecoGym,
                           Toy_GaussianContextDiscreteAction,
                           Toy_GaussianContextDiscreteAction_simple)
 from scripts.models import Regressor, VWPolicy
 from scripts.neural_dice import NeuralDice
-from scripts.replay_buffer import ReplayBuffer
 from scripts.training_routines import (fit_policy_offline_dataset,
                                        fit_policy_online)
 from scripts.utils import (StyblinskiTang_reward, rollout,
                            session_reward_mean_Y_t, session_reward_sum_Y_t,
-                           session_reward_Y_T, session_reward_Y_T_m_Y_1,
-                           set_seed, sliding_window)
+                           session_reward_Y_T, session_reward_Y_T_m_Y_1, set_seed)
 from scripts.utils_dice import reward_fn as reward_fn_dice
 from scripts.value_network_dice import ValueNetwork
 from scripts.wrappers import DiscreteActionWrapper1d

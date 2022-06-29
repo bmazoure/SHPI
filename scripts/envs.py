@@ -1,11 +1,8 @@
 import gym
 import numpy as np
-import logging
-from copy import deepcopy
 from scipy.integrate import odeint, ode
-import recogym
 from scipy.stats import binom,norm
-from recogym import env_1_args, Configuration
+from recogym import env_1_args
 
 
 class Toy_GaussianContextDiscreteAction():

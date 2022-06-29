@@ -24,11 +24,9 @@ import pickle
 import tensorflow.compat.v2 as tf
 
 import six
-from typing import Any, Callable, Iterable, Optional, Sequence, Tuple, Union
+from typing import Optional, Tuple, Union
 
 from tf_agents.trajectories import time_step
-from tf_agents.environments import gym_wrapper
-from tf_agents.utils import nest_utils
 
 CONSTRUCTOR_PREFIX = 'dataset-ctr.pkl'
 CHECKPOINT_PREFIX = 'dataset-ckpt'

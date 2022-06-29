@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import numpy as np
 import tensorflow.compat.v2 as tf
 
-from typing import Any, Callable, Iterable, Optional, Sequence, Tuple, Union
+from typing import Callable, Optional, Union
 
-from .dataset_dice import Dataset, EnvStep, OffpolicyDataset, OnpolicyDataset, StepType
+from .dataset_dice import Dataset, OffpolicyDataset, OnpolicyDataset
 from .utils_dice import reverse_broadcast
 
 

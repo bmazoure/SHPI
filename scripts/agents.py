@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-import torch.nn as nn
 import torch.nn.functional as F
 from scripts.models import FC_Q
 import copy

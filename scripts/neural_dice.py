@@ -14,10 +14,8 @@
 
 import numpy as np
 import tensorflow.compat.v2 as tf
-from tf_agents.specs import tensor_spec
 from tf_agents.policies import tf_policy
-from tf_agents.utils import common as tfagents_common
-from typing import Any, Callable, Iterable, Optional, Sequence, Tuple, Union
+from typing import Callable, Optional, Union
 
 from .dataset_dice import *
 from .utils_dice import *
